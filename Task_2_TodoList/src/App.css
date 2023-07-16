@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+  background-color: #4f4cac;
+  font-family: monospace;
+  font-weight: 900;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.container {
+  background-color: #201b6b;
+  text-align: center;
+  width: 420px;
+  min-height: 500px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 5px solid white;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px 0 #201b6b, 0 8px 22px 0 #201b6b;
+}
+
+
+.title {
+  font-size: 60px;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 7px;
+}
+
+.add {
+  margin: 20px auto;
+  background-color: #2E1DFA;
+  width: 300px;
+  min-height: 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-align: left;
+  position: relative;
+  line-height: 30px;
+  border: 5px solid #8656da80;
+}
+
+.add:hover {
+  border: 5px solid white;
+  transform: scaleX(1.02);
+}
+
+.list {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(0, -50%);
+}
+
+.input {
+  position: absolute;
+  width: 255px;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  height: 26px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: #2E1DFA;
+}
+
+.icon {
+  position: relative;
+  top: 3px;
+  font-size: 30px;
+  transition: transorm .2s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.task {
+  margin: 20px auto;
+  background-color: #2E1DFA;
+  width: 240px;
+  min-height: 40px;
+  border: 5px solid #f72585;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  padding-right: 16%;
+  padding-left: 8%;
+  text-align: left;
+  position: relative;
+  line-height: 30px;
+  overflow-wrap: break-word;
+  border: 5px solid #8656da80;
+}
+
+span{
+    display: inline-block;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+span{
+  cursor: pointer;
+}
+
+.ichov {
+  position: absolute;
+  font-size: 40px;
+  top: 20%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.ichov:hover {
+  transform: scale(1.2);
+}
+
+.update{
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  cursor: pointer;
+  transform: translate(0, -50%);
+}
+
+.task:hover {
+  background-color: white;
+  color: #2E1DFA;
+  margin: 20px auto;
+  transform: scale(1.05);
+  border: 5px solid #2E1DFA;
+
+}
+
+.delete {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.margin-20 {
+  height: 20px;
+}
+
+.margin-100 {
+  height: 100px;
+  color: wheat;
+}
+
+input::placeholder {
+  color: azure;
+}
+
+
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #2E1DFA;
+  cursor: pointer;
+  display: inline-flex;
+  height: 36px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  font-weight: bold;
+  border: 5px solid #3f05a4da;
+}
+
+.button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button:hover {
+  background-color: #2E1DFA;
+  color: white;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-4px);
+}
+
+.button:active {
+  background-color: #FCFCFD;
+  color: #2E1DFA;
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
