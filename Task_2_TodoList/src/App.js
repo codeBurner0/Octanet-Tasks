@@ -14,7 +14,6 @@ function App() {
   const [bool, setBool] = useState(false);
 
   function addItem() {
-    
     if(item && update){
       setItemList(
         itemList.map((elem) =>{

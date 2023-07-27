@@ -8,6 +8,8 @@ body {
   margin: 0px;
   box-sizing: border-box;
   color: white;
+  border: 5px solid white;
+  min-height: 100vh;
 }
 
 .container {
@@ -21,7 +23,6 @@ body {
   border-radius: 20px;
   box-shadow: 0 6px 10px 0 #201b6b, 0 8px 22px 0 #201b6b;
 }
-
 
 .title {
   font-size: 60px;
